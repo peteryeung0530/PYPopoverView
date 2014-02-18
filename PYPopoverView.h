@@ -13,6 +13,7 @@
 @property (nonatomic,strong) NSString* text;
 @property (nonatomic,strong) UILabel* textLabel;
 @property (nonatomic,strong) UIColor* borderColor;
+@property (nonatomic,strong) UIColor* popoverBackgroundColor;
 @property (nonatomic,assign) CGFloat borderRadius;
 
 - (id)initWithFrame:(CGRect)frame andText:(NSString*)text;

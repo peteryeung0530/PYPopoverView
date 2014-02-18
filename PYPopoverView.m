@@ -104,7 +104,8 @@ static const CGFloat kPopoverTriangleWidth           = 12.0f;
                     -M_PI / 2, M_PI, 1);
     
     CGContextSetStrokeColorWithColor(context, self.borderColor.CGColor);
-    CGContextStrokePath(context);
+    CGContextSetFillColorWithColor(context, self.popoverBackgroundColor.CGColor);
+    CGContextDrawPath(context, kCGPathFillStroke);
 }
 
 @end
